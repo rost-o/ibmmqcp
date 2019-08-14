@@ -1,4 +1,4 @@
-module ibmmqcp
+module github.com/rost-o/ibmmqcp
 
 go 1.12
 
