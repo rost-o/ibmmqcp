@@ -19,6 +19,7 @@ vendor/
 *.ipr
 *.iws
 .idea/
+.vscode/
 /build/
 /dist/
 /out/

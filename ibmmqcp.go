@@ -10,13 +10,14 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/ibm-messaging/mq-golang/ibmmq"
 	"log"
 	"math/rand"
 	"net/url"
 	"strings"
 	"sync"
 	"sync/atomic"
+
+	"github.com/ibm-messaging/mq-golang/ibmmq"
 )
 
 // Error / Text definition
