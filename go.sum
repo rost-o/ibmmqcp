@@ -1,2 +1,2 @@
-github.com/ibm-messaging/mq-golang v3.0.0+incompatible h1:Yc3c8emAyveT54uNDRMkgvS+EBAHeLNWHkc3hk5x+IY=
-github.com/ibm-messaging/mq-golang v3.0.0+incompatible/go.mod h1:qjsZDb7m1oKnbPeDma2JVJTKgyCA91I4bcJ1qHY+gcA=
+github.com/ibm-messaging/mq-golang/v5 v5.3.1 h1:kBKY0a5gXm/2xGiWLWLm/UOeXyNYzf5LKuJrh2MJTJI=
+github.com/ibm-messaging/mq-golang/v5 v5.3.1/go.mod h1:ywCwmYbJOU/E0rl+z4GiNoxVMty68O+LVO39a1VMXrE=

@@ -17,7 +17,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ibm-messaging/mq-golang/ibmmq"
+	"github.com/ibm-messaging/mq-golang/v5/ibmmq"
 )
 
 // Error / Text definition
@@ -346,7 +346,7 @@ func (queue *MessageQueue) RegisterCallback(cb MessageProcessingCallback, msgWai
 	getOptions.WaitInterval = int32(msgWaitInterval)
 
 	cbDesc := ibmmq.NewMQCBD()
-	cbDesc.CallbackFunction = func(qObject *ibmmq.MQObject, msgDesc *ibmmq.MQMD, getOptions *ibmmq.MQGMO, msgBody []byte, cbDesc *ibmmq.MQCBC, result *ibmmq.MQReturn) {
+	cbDesc.CallbackFunction = func(_ *ibmmq.MQQueueManager, _ *ibmmq.MQObject, msgDesc *ibmmq.MQMD, getOptions *ibmmq.MQGMO, msgBody []byte, cbDesc *ibmmq.MQCBC, result *ibmmq.MQReturn) {
 		cb(queue.qConn, queue, msgDesc, getOptions, msgBody, cbDesc, result)
 	}
 
